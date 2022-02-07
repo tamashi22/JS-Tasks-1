@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS tasks</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<h1> JS tasks </h1>
+	<h2 > task1 </h2>
+	<p><code>for (var i = 0; i < 10; i++) {<br>
+    setTimeout(function() {<br>
+        console.log(i);<br>
+    }
+};</code></p>
+<p>what will the console output?</p>
+<p class="answer1">This code is displayed 10 x 10 times,
+the function saves only a reference to i, and when the console.log function is called, the for loop has already finished its work - and therefore the value 10 will be added to the i variable.</p>
+<h2 class=> task2 </h2>
+	<p >Write a JavaScript program to display the current day and time in the following format.<br>  
+Sample Output : <br>  
+Today is : Friday. <br>  
+Current time is : 4 PM : 50 : 22
+</p>
+<p class="task2">Solution:</p>
+
+
+
+<h2 class="task3"> task3 </h2>
+<p>Write a JavaScript function that reverse a number. <br>
+Example x = 32243;<br>
+Expected Output : 34223</p>
+<p class="task3">Solution:</p>
+ <form name="publish">
+<input type="number"name="message" id="task3_input" >
+<button onclick="reversenum()">Check</button>
+ </form>
+	
+
+
+
+<h2 class="task4"> task4 </h2>
+<p>Write a JavaScript program to calculate the factorial of a <br>number. In mathematics, the factorial of a non-negative integer n, <br>denoted by n!, is the product of all positive integers less <br>than or equal to n. <br>
+For example, 5! = 5 x 4 x 3 x 2 x 1 = 120 	</p>	
+
+<p class="task4">Solution:</p>
+ <form >
+<input type="number"name="message" id="task4_input" >
+<button onclick="factorial()">factorial</button>
+ </form>
+
+<h2 class="task5"> task5 </h2>
+<p> Write a JavaScript program that accept two integers and display the larger.
+</p>
+<p class="task5">Solution:</p>
+<form >
+Enter number 1:<input type="number"name="message" id="task5_num1" ><br>
+Enter number 2:<input type="number"name="message" id="task5_num2" ><br>
+<button onclick="(larger_num())">Submit</button><br>
+ </form>
+
+
+
+<h2 > task6 </h2>
+<p>
+	Write a simple JavaScript program to join all elements of the following array into a string. <br>
+Sample array : myColor = ["Red", "Green", "White", "Black"]; <br>
+Expected Output :  <br>
+"Red,Green,White,Black" <br>
+"Red+Green+White+Black" 
+
+</p>
+<div class="task6">
+<p class="task">Solution:</p>
+<button class="btn" onclick="ArrayToString()">Answer</button>
+</div>
+
+
+<h2 > task7 </h2>
+ 
+
+	<p>Write a JavaScript function to get the month name from a particular date. <br>
+Test Data :<br>
+console.log(month_name(new Date("10/11/2009"))); <br>
+console.log(month_name(new Date("11/13/2014")));<br>
+Output :<br>
+"October" <br>
+"November" </p>
+<div class="task7">
+<button onclick="GetMonth()">Answer</button><br>
+</div>
+
+
+
+
+<h2 > task8 </h2>
+	<p>Write a JavaScript program to test the first character of a string is uppercase or not
+</p>
+<div class="task8">
+<button class="btn" onclick="isUpper()">Answer</button>
+</div>
+
+<h2 > task9 </h2>
+<p>Write a JavaScript program to draw a smile	
+</p>
+<div class="task9">
+<canvas id="SmileyId" width="256" height="256">
+ Sorry, your browser does not support canvas tag
+</canvas>
+</div>
+
+
+
+<h2 > task10 </h2>
+
+<p>На странице есть верстка:</p>
+
+<div id="string-1">Ядра в вёдра, выдру в тундру!</div>
+<div id="string-2">Выдрав с выдры в тундре гетры</div>
+<div id="string-3">В недрах тундры, выдры в гетрах </div>
+<div id="string-4">Вытру гетрой выдре морду </div>
+<div id="string-5">Тырят в вёдра ядра кедров!</div>
+<div id="string-6">Вытру выдрой ядра кедров</div>
+	
+<p>Необходимо поочередно обратиться к каждому тэгу в нужном порядке, и вывести их содержимое в консоль, чтобы получилась осмысленная скороговорка.<br>
+<br>
+Вывод в консоли:<br>
+В недрах тундры, выдры в гетрах<br>
+Тырят в вёдра ядра кедров!<br>
+Выдрав с выдры в тундре гетры<br>
+Вытру выдрой ядра кедров<br>
+Вытру гетрой выдре морду<br>
+Ядра в вёдра, выдру в тундру!</p>
+
+<button class="btn" onclick="Replace()">Answer</button>
+<p>см.в консоли</p>
+
+<h2 > task11 </h2>
+<p>На странице есть верстка</p>
+
+<div class="element">Element 1</div>
+<div class="element">Element 2</div>
+<div class="element">Element 3</div>
+<div class="element">Element 4</div>
+<div class="element">Element 5</div>
+<div class="element">Element 6</div>
+
+<p>С помощью JS необходимо первым трем  элементам задать красный<br>цвет текста, а остальным трем - зеленый.</p>
+
+<button class="btn" onclick="color()">Answer</button>
+
+<script src="js/script.js"></script>
+
+
+<h2 > task12 </h2>
+
+
+			
+			На странице есть контейнер <br>
+			<ol id="todolist"></ol> <br>
+			, необходимо с помощью цикла добавить в него пять задач (элементов li) с классом task и текстом, взятым из массива задач из пяти элементов: 
+			<p>
+				var tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat'];
+			</p>
+			Ожидаемый результат в инспекторе после выполнения скрипта:
+
+<ol id="todo-list">
+	<li class="task">Buy lemonade</li>
+	<li class="task">Make toasts</li>
+	<li class="task">Repair car</li>
+	<li class="task">Play games</li>
+	<li class="task">Pet a cat</li>
+</ol>
+
+	<button class="btn" onclick="list_to_do()">Answer</button>
+	
+
+<h2 > task13 </h2>
+<p>На странице есть следующая разметка:</p>
+
+<article>
+<h3>What is Lorem Ipsum?</h3>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+<h3>Where does it come from?</h3>
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. from "The Extremes of Good and Evil" by Cicero</p>
+<h3>Why do we use it?</h3>
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+</article>
+
+<p>Вам необходимо с помощью JavaScript вставить после каждого тега p тег 	hr, для визуального отделения абзацев друг от друга.<br>
+
+Указания:<br>
+Подразумевается, что вышеуказанная разметка находится внутри тега body.<br>
+Нельзя модифицировать указанную разметку.<br>
+За использование цикла дополнительные баллы.<br>
+</p>
+<button class="btn" onclick="hrline()">Answer</button>
+
+<h2 > task14 </h2>
+<p>Дана такая разметка:</p>
+
+<div id="cart-items">
+	<div class="item">Milk 1 l.<span class="qty">x 2</span></div>
+	<div class="item">Cola 1.5 l. <span class="qty">x 1</span></div>
+	<div class="item">Bread<span class="qty">x 2</span></div>
+	<div class="item">Cheese<span class="qty">x 1</span></div>
+	<div class="item">Chocolate bar<span class="qty">x 3</span></div>
+</div>
+
+<p>Необходимо с помощью JavaScript удалить элемент "Cola 1.5 l" и заменить товар "Chocolate bar" <br>на "Canned Fish", количеством 4 штуки.<p>
+<button class="btn" onclick="remove_and_replace()">Answer</button>
+
+
+
+
+<h2 > task15 </h2>
+Напишите программу для создания списка задач, <br>которые будет вводить пользователь: <br>
+
+		Для каждого пункта: <br>
+		Запрашивайте содержимое пункта у пользователя с помощью prompt. <br>
+		Создавайте пункт и добавляйте его к UL. <br>
+		Процесс прерывается, когда пользователь <br>нажимает "Отмена" или вводит пустую строку<br>
+		<button class="btn" onclick="create_to_dolist()">Answer</button>
+</body>
+
+
+</html>
